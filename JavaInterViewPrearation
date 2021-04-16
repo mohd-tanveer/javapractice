@@ -1,7 +1,0 @@
-#JavaInterview question and answers
-  1) What is Inversion control , dependecy injection , solid principle?
-    
-   ans: https://practice.geeksforgeeks.org/problems/inversion-of-control 
-        https://alexalvess.medium.com/dependency-injection-and-inversion-of-control-on-net-core-3136fe98b72  
-        https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring
-
