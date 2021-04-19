@@ -2,15 +2,20 @@
 @ https://www.java67.com/
 @ https://www.baeldung.com/
 
-1) What is Inversion control , dependecy injection , solid principle?
+java8 feature
+https://www.baeldung.com/tag/java-8/
+
+-> What is Inversion control , dependecy injection , solid principle?
     ans: https://practice.geeksforgeeks.org/problems/inversion-of-control 
      https://alexalvess.medium.com/dependency-injection-and-inversion-of-control-on-net-core-3136fe98b72  
      https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring
         
-2) OOP Design principle 
+-> OOP Design principle 
   ans: https://hackernoon.com/10-oop-design-principles-every-programmer-should-know-f187436caf65
   ocp(https://medium.com/@gabriellamedas/ocp-the-open-closed-principle-b994922bed94)
   
-3) Public vs Protected vs Package vs Private modifier in Java
+-> Public vs Protected vs Package vs Private modifier in Java
   ans:   https://www.java67.com/2012/12/what-is-public-private-protected-package-default-private-access-modifier-java.html#ixzz6sDba5vYq
+  
+  
 
