@@ -20,5 +20,9 @@ https://medium.com/edureka/java-interview-questions-1d59b9c53973
 -> Public vs Protected vs Package vs Private modifier in Java
   ans:   https://www.java67.com/2012/12/what-is-public-private-protected-package-default-private-access-modifier-java.html#ixzz6sDba5vYq
   
+-> Dispatcher servlet : The job of the DispatcherServlet is to take an incoming URI and find the right combination of handlers (generally methods on Controller classes) 
+    and views (generally JSPs) that combine to form the page or resource that's supposed to be found at that location.(stackoverflow)
+    https://www.java67.com/2017/06/what-is-use-of-dispatcherservlet-in-spring-mvc.html
+  
   
 
