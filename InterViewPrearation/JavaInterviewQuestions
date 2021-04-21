@@ -10,12 +10,15 @@ https://www.baeldung.com/java-8-interview-questions
 100 interview question for java
 https://medium.com/edureka/java-interview-questions-1d59b9c53973
 
-Why is JAVA a platform independent language?
+-> Why is JAVA a platform independent language?
     Java compiler produces a unique type of code called bytecode unlike c compiler where compiler produces only natively executable code for a particular machine.
     When the Java program runs in a particular machine it is sent to java compiler, which converts this code into intermediate code called bytecode. 
     This bytecode is sent to Java virtual machine (JVM) which resides in the RAM of any operating system.
     JVM recognizes the platform it is on and converts the bytecodes into native machine code. Hence java is called platform independent language.
     https://medium.com/@neil.wilston123/why-java-is-platform-independent-1d82c2249a69
+    
+-> Deep, Shallow and Lazy Copy with Java Examples
+    https://www.geeksforgeeks.org/deep-shallow-lazy-copy-java-examples/#:~:text=In%20shallow%20copy%2C%20only%20fields,as%20well%20as%20objet%20references.
 
 -> What is Inversion control , dependecy injection , solid principle?
     ans: https://practice.geeksforgeeks.org/problems/inversion-of-control 
