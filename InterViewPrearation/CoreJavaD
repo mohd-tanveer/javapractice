@@ -1,0 +1,14 @@
+1.  Difference between final, finalize and finally
+  final: ss(screen shot)
+  finally: ss: block of code that will be executed irrespective of code
+  fianlize : it is a method present in object class : before destorying any object GC ask if there is anything to execute before destroying the object: hence finalize method invoked by gc before destorying 
+  
+  fianlly meant for cleanup activites related to try block where as finalize() meant for activities related to object
+  
+  2. String & String Buffer & String Builder 
+    immutable : mutable : mutable
+  3.       ==           vs    .equals 
+     refrence compare          content comparison 
+  
+  4. Various modifiers in java
+    ss
