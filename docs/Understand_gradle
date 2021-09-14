@@ -1,0 +1,212 @@
+Lecture1 : Introdcution:
+what is gradle : 
+gradle is an open source build automation tool that is based on the concept of apache maven and Ant.
+
+gradle is combinaton of both maven and ant.
+
+gradle introduced Kotlin and groovy-based DSL(domain specific language) instead of XML for decalaring the project configuration 
+
+gradle offers an elastic model that can help the development lifecycle from compilling and packaging code for web and mobile applications.
+
+it provides sipport for building testing and deploying software on different platforms.
+
+it has been developed for building an automation on many languages and platforms, including java,scala,android,C/C++, 
+and groovy. Gradle provides integration with several development tools and servers,
+including eclipse, intellij, jenkins and android studio.
+
+some leading Enterprises Companies like LinkedIn,google and netflix use gradle
+
+it is developed to overcome the drawbacks of maven and ant and supports a wide range of IDE's.
+
+
+lecture3
+Why to use Gradle?
+free and open-source
+highly Customizable and extensible
+gradle is very fast in performance 
+		faster than maven in all scenarios including large builds using build-cache
+		
+flexiblity:
+it is a flexible tool, gradle is a plug-in-based build tool
+create our plug-in in different programming language
+create a plug-in and give control to the codebase
+
+Multi-project build support
+powerful support for the multi-project builds
+
+Extensibility
+	easy extend  the gradle to provide our task types or build models.
+	
+Incremental Builds
+	If we compile source code , it will check if hte sources have changed since the previous execution, if the code is changed then it
+	will be executed but if the code is not chanegd then it will skip the execution and the task is marked as updated.
+	
+Gradle Wrapper
+gradle wrapper allows you to execute gradle builds on machines where gradle is not installled.
+
+User Experience
+	supports a wide range of IDE's to provide an improved user experience.
+	provides a command -line interface which offers many powerful features like gradle Task, Command line completion and more 
+	Also provides interactive web-based UI for debuggin and optimizing builds.
+	
+
+lecture4
+create a project 
+gradle init
+choose 2
+rest option choose respectively 
+
+
+lecture5 :Build and run java project using gradle.
+
+gradle build  --to buld your project
+gradleW.bat build  -- it can also use to build a project
+gradlew.bat clean  -- to clean the build project.
+gradle run -- to run applications
+gradle task --to show all the task
+gradle task --all  - to display more 
+
+
+lecture6
+how to import java gradle project in your IDE  :  select and import in intellij , for eclipse try different.
+
+lectture7 : 
+how create custom task  in build.gradle
+task myTask{
+    description = 'this is my Custom Task'
+    doLast{
+        println ' Welcome to My Custom Built Task in Gradle'
+    }
+}
+
+lecture7:
+Everything in gradle is based on the project and task
+
+gradle task
+
+	task is a single unit of work that a build performs
+	these tasks can be compiling classes, creating a jar, Generating Javadoc, and publishing some archives to a repository and more.
+	single atomic piece of work for a build process.
+
+Gradle Project
+	In Gradle, A product can be a library JAR or a web application. it may also serve a distribution ZIP, which is assembled from the JARs produced 
+	by other projects.
+	
+	A project could be deploying our application test or production environments. Each project in gradle is made up of one or more tasks.
+
+Types of task
+	default task 
+	custom task
+
+defaul task 
+	gradle tasks
+	gradle tasks --all
+Custom task 
+task task_name{
+	group "group name for the task"
+    	description = 'this is my Custom Task'
+	doFirst{
+	----code for execution----
+	}
+    	doLast{
+        println ' Welcome to My Custom Built Task in Gradle'
+	----code for execution----
+    	}
+}
+
+
+lecture 8: Gradle Repository
+
+Specific loaction of modules/libraries so that the gradle build can consume them. the location for storing modules/libraries is called a repository
+repositories can be in different forms, such as a local or remote repository.
+at runtime, gradle will discover the declared dependencies required for operating a specific tsk. once a dependency is resolved, the resolution mechanism stores the essential files of dependency in hte local cache memroy also call dependency cache.
+
+Future builds reuse the files saved in the cache to skip unnecessary newtork calls.
+
+
+gradle supports the following repositories 
+Ivy repositories
+maven repositories
+flat directroy repository
+
+
+repositories{
+mavenCentral()
+}
+or
+repositories{
+maven {
+url "https://repo.maven.apache.org/maven2/"
+}
+}
+
+we can also specify other targets, for example bintray as maven repositroy
+
+repositories{
+maven("http://jcenter.bintray.com/")
+}
+
+define an ivy repo.
+
+repositories{
+ivy{
+url "https://repo.maven.apache.org/maven2/"
+}
+}
+
+
+Flat directory repository
+
+some projects might prefer to store dependencies on a shared drive or as part of the project source code instead 
+of a binary repository product. if you want to use a flat filesystem directory as a repository.
+
+repositories{
+flatDir{
+	dirs 'lib' 
+}
+flatDir{
+	dirs 'lib1' , 'lib2'
+}
+}
+
+lecture9: gradle dependecny management
+
+Gradle build script describes a process of building projects. most of the projects are not self-contained. They need some files to compile and test hte source files.
+for ecample, to use spring, we must include some Spring JARs in the classpath. gradle uses some unique scripts to manage the dependencies, which needs to be downloaded.
+Every dependency is applied to sa specified scope for example some dependencies are used to compile the source code and some will be available at runtime.
+gradle considers the outcomes of buildig and publishing the projects
+
+
+Dependecy configuration 
+	decalring dependency 
+	we must declare a dependency to use it.
+	dependency configuration is a process of defining a set of dependencies.
+	this feature is used to decalre external dependencies, which we want to downlaod from the web.
+
+A Dependency can be used on different phases of the project. these phases can be:
+	compile : the dependencies are used at runtime by classes. By Default, it also contains the compile-time dependencies.
+	Runtime: these dependencies are required to compile the test source of the project. it also contains of the compiled classes and the compile-time dependenices.
+	TestRunTime: These dependencies are required to run the tests. it also contains runtime and test compile dependencies.
+
+
+Gradle Vs Maven.
+https://gradle.org/maven-vs-gradle/
+
+
+Creating a fat jar in Gradle 
+fat jar or uber-jar,
+we have to add custom task 
+
+
+Lecture10:
+How to convert java maven project into gradle?
+gradle init(with this command we can directly convert maven project into gradle project)
+
+
+how to create springBoot Tutorial with gradle.
+
+
+Gradle Integration with jenkins
+
+
+
