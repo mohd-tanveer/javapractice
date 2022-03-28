@@ -39,4 +39,12 @@ https://medium.com/edureka/java-interview-questions-1d59b9c53973
 -> Interview Question on Thread.
    https://javarevisited.blogspot.com/2018/07/java-multi-threading-interview-questions-answers-from-investment-banks.html#axzz6sg4Jx64m
   
+-> Spring bean scopes 
 
+singelton --> every time same object will be returned   @Scope("singelton") or @Scope(value = ConfigurableBeanFactory.singelton_scope)
+
+Pototype -->every time we ask the instance to the cotainer it gives us brand new instance @Scope("protype");
+
+what will happen if we can prototype in a singelton bean --> same object will be returned so to solve that --> https://www.youtube.com/watch?v=xpKbs8FHUi4  58:37 
+  use a proxy method , along with prototype  @Scope(value = "prototype" , proxyMode = ScopeProxyMode.TARGET_CLASS)
+  
