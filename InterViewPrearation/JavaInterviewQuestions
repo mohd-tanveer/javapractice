@@ -48,3 +48,7 @@ Pototype -->every time we ask the instance to the cotainer it gives us brand new
 what will happen if we can prototype in a singelton bean --> same object will be returned so to solve that --> https://www.youtube.com/watch?v=xpKbs8FHUi4  58:37 
   use a proxy method , along with prototype  @Scope(value = "prototype" , proxyMode = ScopeProxyMode.TARGET_CLASS)
   
+  instead of proxy we can also use @Lookup 
+  
+  
+  
